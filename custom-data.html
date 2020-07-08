@@ -19,6 +19,11 @@
         <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
     {% endfor %}
 
+    <h2>JSON</h2>
+    {% for nav in site.data.navs-json.items %}
+        <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
+    {% endfor %}
+
     
 </body>
 </html>
