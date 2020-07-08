@@ -9,5 +9,11 @@
 </head>
 <body>
     <h1>Using Jekyll Custom Data</h1>
+    <h2>CSV</h2>
+    {% for nav in site.data.navs %}
+        <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
+    {% endfor %}
+
+    
 </body>
 </html>
