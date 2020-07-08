@@ -25,6 +25,8 @@
     {% endfor %}
 
     <h2>YML</h2>
-    
+    {% for nav in site.data.navs-yml.items %}
+        <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
+    {% endfor %}
 </body>
 </html>
