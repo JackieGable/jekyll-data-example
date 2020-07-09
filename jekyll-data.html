@@ -24,5 +24,32 @@
 
     <h2>_config.yml</h2>
     <p>Twitter username: {{site.twitter_username}}</p>
+    
+    <h2>Latest post</h2>
+    {% for post in site.posts limit:1 %}
+        {{post.title}}
+    {% endfor %}
+
+    <h2>All other posts</h2>
+    {% for post in site.posts offset:1 %}
+        <p>{{post.title}}</p>
+    {% endfor %}
+
+    <h2>Plus one more post</h2>
+    {% for post in site.posts offset:1 limit:1 %}
+        <p>{{post.title}}</p>
+    {% endfor %}
+
+    <h2>North America blog posts</h2>
+    {% assign naPosts = site.posts | where: "region", "North America" %}
+    {% for post in naPosts %}
+        <p>{{post.title}}</p>
+    {% endfor %}
+
+    <h2>Posts with links</h2>
+    {%- for post in site.posts -%}
+        <p></p>
+        <a href="{{- post.url | relative_url -}}">{{post.title}}</a>
+    {%- endfor -%}
 </body>
 </html>
