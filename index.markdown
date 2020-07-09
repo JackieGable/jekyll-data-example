@@ -4,3 +4,6 @@
 
 layout: home
 ---
+This is a sample site to familiarize you with using Jekyll built-in data and creating custom data.
+
+The following files
