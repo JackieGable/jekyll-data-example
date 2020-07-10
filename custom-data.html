@@ -8,26 +8,36 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="index.html">< Back to home</a>
     <h1>Using Jekyll Custom Data</h1>
-    <h2>CSV</h2>
+    <h2>CSV File</h2>
     {% for nav in site.data.navs %}
         <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
     {% endfor %}
 
-    <h2>TSV</h2>
+    <h2>TSV File</h2>
     {% for nav in site.data.navs-tsv %}
         <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
     {% endfor %}
 
-    <h2>JSON</h2>
+    <h2>JSON File</h2>
     {% for nav in site.data.navs-json.items %}
         <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
     {% endfor %}
 
-    <h2>YML</h2>
+    <h2>YML File</h2>
     {% for nav in site.data.navs-yml.items %}
         <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
+    {% endfor %}
+
+    <h2>YML File one to many</h2>
+    {% for nav in site.data.navs-yml-one-to-many.items %}
+        <p><strong>Title: </strong>{{nav.title}} - {{nav.url}}</p>
+        {% if nav.subitems %}
+            {% for subitem in nav.subitems %}
+                <p><strong>&nbsp;&nbsp;Subitem title: </strong>
+                {{subitem.title}} - {{subitem.url}}</p>
+            {% endfor %}
+        {% endif %}
     {% endfor %}
 </body>
 </html>
