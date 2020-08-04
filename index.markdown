@@ -12,3 +12,5 @@ use the following links to view the examples:
 [Jekyll built-in data (jekyll-data.html)](jekyll-data.html)
 
 [Custom data files (custom-data.html)](custom-data.html)
+
+[Get the code at the GitHub repo for this site](https://github.com/BillRaymond/jekyll-data-example)
