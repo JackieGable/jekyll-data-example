@@ -3,7 +3,8 @@
 This repo is part of my _Working with GitHub Pages and Jekyll_ video series on [YouTube](https://www.youtube.com/playlist?list=PLWzwUIYZpnJuT0sH4BN56P5oWTdHJiTNq).
 
 [Working with Jekyll Data: Part 1 - Overview](https://youtu.be/7Jj-KX40iTE)
-[Working with Jekyll Part 2: Using built-in Jekyll data]()
+[Working with Jekyll Part 2: Using built-in Jekyll data](https://youtu.be/d9obuvg3ReA)
+[Working with Jekyll Part 3: Custom data](https://youtu.be/d9obuvg3ReA)
 
 This is a vanilla Jekyll website using the default _minima_ theme. The site is published using GitHub Pages here. Just click the two links when you visit the site.
 
